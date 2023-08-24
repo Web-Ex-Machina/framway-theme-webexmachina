@@ -35,6 +35,15 @@ body.home{
   }
 }
 
+.mod_article{ position: relative;
+  &:first-of-type{
+    >.heroFW:first-child+.mod_breadcrumb:last-child{margin-top: 0; position: absolute; bottom: 0; left: 0; color: white; opacity: 1;
+      &.container{left: 50%; transform: translateX(-50%);}
+      a{color: inherit;}
+    }
+  }
+}
+
 select.m-bottom-0+.select2-container{margin-bottom: 0;}
 
 .ce_image{
@@ -56,7 +65,6 @@ table.table td{width: auto !important;
     // @extend .ft-roboto;
   }
 }
-
 
 .title--banner{text-align: center; margin-bottom: 0; text-transform: uppercase; font-weight: 300; line-height: 1.5; @extend .bg-blacklight !optional;
   font-size: 1.8rem; font-size: calc(1.3rem + 1vw);
@@ -227,13 +235,14 @@ $mozaic_colors: (
 
 
   .block-card__figure .block-card__category,
-  .block-card__figure .block-card__title{z-index: 1; margin: auto; padding: 1.5em 2em; line-height: 1.3; right: auto; bottom: auto; text-shadow: none; font-weight: 300; font-size: 1em; font-size: calc(1em + 0.5vw); width: 100%;
+  .block-card__figure .block-card__title{z-index: 1; position: relative; margin: auto; padding: 1.5em 2em; line-height: 1.3; right: auto; bottom: auto; text-shadow: none; font-weight: 300; font-size: 1em; font-size: calc(1em + 0.5vw); width: 100%;
+    opacity: 1; transition: opacity 0.4s; color: color(white);  mix-blend-mode: luminosity; text-transform: uppercase;
     @include media-max(lg){padding: 1em;}
     @include media-max(md){padding: 1.5em;}
     @include media-max(xs){padding:1.3em;}
     @include media-max(xxs){padding: 1em;}
   }
-  .block-card__figure .block-card__category{bottom: 0; right: 0; top: auto; left: auto; font-size: 1em; padding: 1em 1.3em; letter-spacing: 3px; opacity: 0.7;
+  .block-card__figure .block-card__category{bottom: 0; right: 0; top: auto; left: auto; font-size: 1em; padding: 1em 1.3em; letter-spacing: 3px; opacity: 0.7; position: absolute;
     @include media-max(xxs){font-size: 0.8em;}
   }
   .block-card__figure .block-card__text{position: relative; z-index: 1; transition: opacity 0.4s; font-size: 1em; text-transform: none; font-weight: 300; padding: 0 2em 3.5em; color: white; line-height: 1.3; font-style: italic; opacity: 0.5;
