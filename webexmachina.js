@@ -53,8 +53,8 @@ $(function(){
 	$('.heroFW--punchline').each(function(){
 		var $items = $(this).children('div');
 		var $itemsAnimated = $items.children('div.play');
-		var delayActive = 800;
-      	var delayAnim = 800; // delay between each animation
+		var delayActive = 1000;
+      	var delayAnim = 1000; // delay between each animation
 		$items.each(function(k,item){
 			setTimeout(function(){
 				$(item).addClass('active');
