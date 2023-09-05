@@ -19,6 +19,11 @@ $(function(){
 		// $(window).resize();
 	});
 
+	$('body').on('click', 'a[portfolio-url]', function(e) {
+		e.preventDefault();
+		window.location.href=this.getAttribute('portfolio-url');
+	});
+
 
 	$(".jssocials").jsSocials({
 		shares: [
