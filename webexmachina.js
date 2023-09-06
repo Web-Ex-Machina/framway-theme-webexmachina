@@ -15,7 +15,7 @@ $(function(){
 	});
 
 	$('body').on('click','.mod_wem_portfolio_list .filters .filter',function(){
-	    this.parentElement.scrollIntoView({behavior: "smooth",block:"start",inline:"nearest"}); 
+	    // this.parentElement.scrollIntoView({behavior: "smooth",block:"start",inline:"nearest"}); 
 		// $(window).resize();
 	});
 
