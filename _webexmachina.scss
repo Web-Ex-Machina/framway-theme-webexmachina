@@ -16,7 +16,7 @@ html{
   .headerFW__nav__wrapper{align-items: flex-end;}
   .headerFW__nav__inline{
     &>ul{ align-items: center; line-height: 1.6;
-      >li{height: auto;}
+      >li{height: auto; display: flex;}
       &>li>:not(ul){}
     }
   }
