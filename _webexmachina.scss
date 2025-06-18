@@ -86,8 +86,8 @@ table.table td{width: auto !important;
 }
 .ce_image figcaption {font-size: 0.8em; font-style: italic; margin: 7.5px; }
 
-.grid--slide{@extend .p-all-x2,.cols-lg-2,.cols-md-1 !optional;
-  .item-grid{@extend .cols-span-lg-2,.cols-span-md-1 !optional;
+.grid--slide{@extend .p-all-x2,.cols-xl-2,.cols-lg-1 !optional;
+  >.item-grid{@extend .cols-span-xl-2,.cols-span-lg-1 !optional;
     .ce_image{@extend %img-container !optional; height: 100%; text-align: center;
       figure{height: 100%;
         img{margin: auto;left: 0;right: 0;height: 100%;}
